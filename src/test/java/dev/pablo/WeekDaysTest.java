@@ -38,4 +38,9 @@ public class WeekDaysTest {
         assertEquals("Sunday", dayList.get(6));
     }
 
+    @Test
+    void testGetDaysCount() {
+        assertEquals(7, weekDays.getDaysCount());
+    }
+
 }
