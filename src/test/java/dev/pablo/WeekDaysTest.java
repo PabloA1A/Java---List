@@ -29,4 +29,13 @@ public class WeekDaysTest {
         assertTrue(dayList.contains("Saturday"));
         assertTrue(dayList.contains("Sunday"));
     }
+
+    @Test
+    void testGetDays() {
+        List<String> dayList = weekDays.getDays();
+        assertEquals(7, dayList.size());
+        assertEquals("Monday", dayList.get(0));
+        assertEquals("Sunday", dayList.get(6));
+    }
+
 }

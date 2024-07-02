@@ -20,4 +20,8 @@ public class WeekDays {
     public List<String> getDays() {
         return new ArrayList<>(days);
     }
+
+    public int getDaysCount() {
+        return days.size();
+    }
 }
