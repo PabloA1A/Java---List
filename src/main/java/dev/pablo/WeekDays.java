@@ -24,4 +24,12 @@ public class WeekDays {
     public int getDaysCount() {
         return days.size();
     }
+
+    public void removeDay(String day) {
+        days.remove(day);
+    }
+
+    public boolean removeDays(String day) {
+        return days.remove(day);
+    }
 }

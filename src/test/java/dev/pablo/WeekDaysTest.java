@@ -1,6 +1,7 @@
 package dev.pablo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
@@ -43,4 +44,10 @@ public class WeekDaysTest {
         assertEquals(7, weekDays.getDaysCount());
     }
 
+    @Test
+    void testRemoveDay() {
+        assertTrue(weekDays.removeDays("Monday"));
+        weekDays.removeDay("Monday");
+        assertFalse(weekDays.removeDays("Monday"));
+    }
 }
