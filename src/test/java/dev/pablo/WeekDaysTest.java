@@ -58,5 +58,11 @@ public class WeekDaysTest {
         assertEquals("Sunday", weekDays.getDay(6));
         assertNull(weekDays.getDay(7));
     }
+
+    @Test
+    void testDayExists() {
+        assertTrue(weekDays.dayExists("Wednesday"));
+        assertFalse(weekDays.dayExists("Mondey"));
+    }
     
 }
