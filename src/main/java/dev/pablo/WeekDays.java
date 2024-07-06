@@ -1,6 +1,7 @@
 package dev.pablo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class WeekDays {
@@ -42,5 +43,9 @@ public class WeekDays {
 
     public boolean dayExists(String day) {
         return days.contains(day);
+    }
+
+    public void sortAlphabetically() {
+        Collections.sort(days);
     }
 }

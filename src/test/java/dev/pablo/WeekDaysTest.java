@@ -1,9 +1,9 @@
 package dev.pablo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
 
@@ -64,5 +64,12 @@ public class WeekDaysTest {
         assertTrue(weekDays.dayExists("Wednesday"));
         assertFalse(weekDays.dayExists("Mondey"));
     }
-    
+
+    @Test
+    void testSortAlphabetically() {
+        weekDays.sortAlphabetically();
+        List<String> dayList = weekDays.getDays();
+        assertEquals("Friday", dayList.get(0));
+        assertEquals("Wednesday", dayList.get(6));
+    }
 }
