@@ -72,4 +72,11 @@ public class WeekDaysTest {
         assertEquals("Friday", dayList.get(0));
         assertEquals("Wednesday", dayList.get(6));
     }
+
+    @Test
+    void testClearList() {
+        weekDays.clearList();
+        assertEquals(0, weekDays.getDaysCount());
+        assertTrue(weekDays.getDays().isEmpty());
+    }
 }

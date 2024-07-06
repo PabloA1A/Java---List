@@ -48,4 +48,8 @@ public class WeekDays {
     public void sortAlphabetically() {
         Collections.sort(days);
     }
+
+    public void clearList() {
+        days.clear();
+    }
 }
